@@ -1,6 +1,11 @@
 /*
 1. Create a function named `sayHello` that alerts a message `Hello World!`.
 */
+  function sayHello(){
+    let world = alert("Hello World")
+  }
+
+
 
 /*
 2. Create a function named `fullName` with the following steps:
@@ -10,6 +15,14 @@
   - Concat the value of fistName and lastName and store it in another variable named `fullName`.
   - Alert `fullName`
 */
+
+let firstName = prompt( "Enter your first name" );
+let lastName = prompt( "Enter your last name" );
+let fullName = alert( `${firstName + " "+ lastName}`);
+
+
+
+
 
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -39,12 +52,27 @@
   9 * 10 = 90
 */
 
+let num = +prompt("Enter a number");
+for(let i=1; i <=10; i++){
+let result = i * num;
+console.log(`${num} * ${i} = ${result}`);
+}
+
+
+
 /*
 5. Create a function named `isLeapYear` with the following steps:
 
   - Prompts a message saying `Enter a year` and store the value into variable named`year`
   - Alert `[year] is a leap year` otherwise `[year] is not a leap year`
 */
+function isLeapYear() {
+  let year = +prompt( "Enter a year" )
+if ( year % 4 === 0 ) {
+  alert( `${year} is a leap year`)
+}else alert ( `${year} is not a leap year`)
+}
+
 
 /*
 6. Create a function named `getFactorial` with the following steps:
@@ -53,3 +81,12 @@
   - Alert `The factorial of [number] is [factorial]`
 
 */
+
+let f = 1;
+let number = +prompt("Enter a number")
+for(let i=1; i<=number; i++){
+  f *= number
+  console.log(f)
+}
+
+
