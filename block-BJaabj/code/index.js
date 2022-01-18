@@ -90,3 +90,10 @@ for(let i=1; i<=number; i++){
 }
 
 
+let f=1
+let num = + prompt( "Enter a number" )
+for( let i = num; i>= 1; i--){
+  f = f* i
+  console.log(f)
+}
+
