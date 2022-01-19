@@ -2,6 +2,14 @@
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
 
+function sayHello (name){
+  return `Hello ${name}`
+}
+
+let msg1 = sayHello ("John")
+
+alert(msg1);
+
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -11,15 +19,31 @@ Example:
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
 
+function getFullName ( firstName, lastName){
+  return ` ${firstName + lastName}`
+}
+
+let msg2= getFullName ( "Baljeet", "Singh");
+
+
+
+
+
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
 
 Example:
 addTwoNumbers(10, 22); // 32
-addTwoNumbers(20, 32); // 32
+addTwoNumbers(20, 32); // 52
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
+
+function addTwoNumbers (firstNum, secondNum){
+   if (typeof firstNum === "number" && typeof secondNum === "number")
+  return (firstNum + secondNum)
+  else alert (`Enter Valid Input`)
+}
 
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
