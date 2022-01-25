@@ -42,11 +42,33 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function addOne(n){
+  return(n+1)
+}
+addOne(56)
+
+
 // - Write a Function Expression
+
+let addOnes = function addOne(n){
+  return(n+1)
+}
+addOnes(56)
 
 // - Write an Arrow Function without curly brackets(if possible)
 
+let addOnes = (n) => n+1 
+addOnes(60)
+
+
 // - Write an Arrow Function with curly brackets
+
+let a = function addOne (n){
+  return(n+1)
+}
+a(65)
+
+
 
 // - Execute the function
 
@@ -63,7 +85,21 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function subtractOne(n) {
+  return(n-1)
+}
+subtractOne(81)
+
 // - Write a Function Expression
+
+
+let subtract = function subtractOne(n) {
+  return(n-1)
+}
+subtract(81)
+
+
+
 
 // - Write an Arrow Function without curly brackets(if possible)
 
@@ -84,17 +120,37 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function sum ( numA, numB){
+  return ( numA + numB)
+}
+
+
+
+
 // - Write a Function Expression
 
+ let a = function sum ( numA, numB){
+  return ( numA + numB)
+}
+
+
 // - Write an Arrow Function without curly brackets(if possible)
+
+
 
 // - Write an Arrow Function with curly brackets
 
 // - Execute the function
 
+sum (21,23)
+
 // - Execute the function and store the return value in a variable
 
+let b=sum(21,23)
+
 // - What is the typeof returnValue
+
+'number'
 
 /* 4. Square of the given value
 
@@ -105,7 +161,15 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function square (n) {
+  return (n*n)
+}
+
 // - Write a Function Expression
+
+let a = function square (n) {
+  return (n*n)
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
 
@@ -113,9 +177,13 @@ Do the following with above problem.
 
 // - Execute the function
 
+square (10)
+
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+`number`
 
 /* 5. Find isGreater
 
@@ -126,17 +194,30 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function isGreater ( x, y){
+  if (x>y) return (true);
+  else return (false) 
+}
+
 // - Write a Function Expression
+
+let d = function isGreater ( x, y){
+  if (x>y) return (true);
+  else return (false) 
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
 
 // - Write an Arrow Function with curly brackets
 
 // - Execute the function
+isGreater(56,55)
 
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+Boolean
 
 /* 6.
 
@@ -150,6 +231,11 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function oddOrEven (x){
+  if (x % 2 === 0) return `Number is even`;
+  else return `Number is odd`
+}
+
 // - Write an anonymous Function Expression
 
 // - Write an named Function Expression
@@ -160,6 +246,9 @@ Do the following with above problem.
 
 // - Execute the function
 
+oddOrEven ( 3 )
+
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+string
