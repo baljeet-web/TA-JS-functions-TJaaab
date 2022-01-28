@@ -8,9 +8,15 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(dogAge,myAge) {
+  myAge =+prompt(`Enter your age`);
+  alert ( `Your dog's age is ${myAge/7}`)
+  dogAge =+prompt(`Enter your dog's age`)
+  alert(`Your age is ${dogAge*7}`)
 }
+
+calculateDogAge();
+
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +25,12 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age, moviesYouWatch) {
+age = + prompt (`Enter your age.`);
+moviesYouWatch = +prompt ( `Movies you watch in a week`);
+alert ( `You will watch ${(70 - age)*(moviesYouWatch *4)} movies till the age of 70.`)
 }
+calculateMoviesToWatch();
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -29,9 +38,12 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(celcius) {
+  celcius = +prompt(`Enter the temperature in celcius`);
+  alert( `"${(celcius * 9/5) + 32}°F is ${celcius}°C"`);
+  
 }
+celsiusToFahrenheit();
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,9 +51,12 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function fahrenheitToCelsius(fahrenheit) {
+  fahrenheit = +prompt(`Enter the temperature in fahrenheit : `);
+  alert(`"${fahrenheit}°F is ${(fahrenheit -32) *5/9}°C"`);
 }
+celsiusToFahrenheit();
+
 
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
@@ -75,6 +90,13 @@ sumOrProductOfN(4, 'product'); // 24
 sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 
 /*
+add(21, 23);
+
+invalid because there is let inside the brackets, we cannot assign this in variable.
+```
+
+```js
+function add(a = 0; b = 0) {
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
@@ -92,9 +114,13 @@ function sumOfN() {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(firstNumber, secondNumber) {
+if (firstNumber < secondNumber){
+  alert (`${firstNumber} is minimum`)
+} else alert (`${secondNumber} is minimum.`)
 }
+
+min(5,4)
 
 min(0, 10);
 min(0, -10);
@@ -103,6 +129,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
+function typeCheck(x) {
+  return typeof x
 }
+typeCheck(`string`)
