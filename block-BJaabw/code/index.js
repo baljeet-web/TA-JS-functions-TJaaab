@@ -110,14 +110,13 @@ Twist is when user passes anything other than number, or string value you should
 */
 
 function sum(first, second) {
-  first =+prompt(`Enter the first word or number`);
-  second =+prompt (`Enter the second word or number`)
-  sum = (first + second);
-  if (typeof (first && second) == 'string'){
-    alert (sum)
-  }else if (typeof (first && second) == 'number'){
-    alert (sum)
-  }else alert ("Enter valid values")
+  if (typeof first == 'number' && typeof second == 'number'){
+    return first + second
+  } else if (typeof first =='string' &&typeof second == 'string'){
+    return first + " " + second
+  } else {
+    return "Enter valid values"
+  }
 }
 
 // Function Test
