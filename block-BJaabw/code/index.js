@@ -11,9 +11,14 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(minutes) {
+  minutes = +prompt ( `How many minutes ?`)
+  alert ( `${minutes} minutes in seconds are ${minutes * 60}`)
+  return (minutes * 60)
 }
+
+minToSec(10)
+
 // - Execute the function with required parameter
 
 /* 2. 
@@ -26,9 +31,16 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lowerNumber, upperNumber, number) {
+  lowerNumber =+prompt (`Write the first number`)
+  upperNumber =+prompt (`Write the second number`)
+  number =+prompt (`Write a number`)
+  if ( number > (lowerNumber - upperNumber)){
+    alert (false)
+  } else alert (true)
 }
+
+isInRange()
 // - Execute the function with required parameter
 
 /* 2. calculateBMI
@@ -49,10 +61,20 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(weight,height) {
+  weight =+prompt(`Whats' your weight ?`);
+  height =+prompt(`Whats' your height in centimetres`);
+  BMI = (weight / ((height/100) * (height/100) ));
+  if (BMI < 18.5) {
+    alert (`You are Underweight where weight is ${BMI}`)
+  }else if (BMI >18.5 && BMI <= 24.9){
+    alert (`Your weight is normal where weight is ${BMI}` )
+  }else if (BMI >25 && BMI <= 29.9){
+    alert (`You are overweight where weight is ${BMI}`)
+  } else alert ( `You are obese where weight is ${BMI}`)
 }
 
+calculateBMI()
 /* 3. appropiateDrinks
 
 Create a function that take the age are return the appropiate drink based on these conditions:
@@ -64,9 +86,17 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  age =+ prompt (`What's your age ?`)
+  if (age < 14){
+    return (`drink fruit juice.`)
+  }else if (age <18){
+    return(`drink soda.`)
+  }else if ( age <21){
+    return (`drink fruit-flavored beer`)
+  }else return (`drink throat-piercing vodka`)
 }
+appropiateDrinks(25)
 
 /* 4. Add two numers or string
 
@@ -79,8 +109,15 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(first, second) {
+  first =+prompt(`Enter the first word or number`);
+  second =+prompt (`Enter the second word or number`)
+  sum = (first + second);
+  if (typeof (first && second) == 'string'){
+    alert (sum)
+  }else if (typeof (first && second) == 'number'){
+    alert (sum)
+  }else alert ("Enter valid values")
 }
 
 // Function Test
